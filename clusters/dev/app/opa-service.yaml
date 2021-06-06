@@ -7,12 +7,12 @@ metadata:
   name: opa
 spec:
   ports:
-  - name: 80-8181
+  - name: http
     port: 80
     protocol: TCP
     targetPort: 8181
   selector:
     app: opa
-  type: ClusterIP
+  type: LoadBalancer
 status:
   loadBalancer: {}
