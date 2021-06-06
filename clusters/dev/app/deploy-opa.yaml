@@ -21,7 +21,5 @@ spec:
       containers:
       - image: openpolicyagent/opa
         name: opa
-        ports:
-        - containerPort: 8181
         resources: {}
 status: {}
