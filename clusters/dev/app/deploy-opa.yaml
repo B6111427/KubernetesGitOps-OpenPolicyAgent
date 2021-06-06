@@ -21,6 +21,5 @@ spec:
       containers:
       - image: openpolicyagent/opa
         name: opa
-        restartPolicy: Always
         resources: {}
 status: {}
