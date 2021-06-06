@@ -7,7 +7,7 @@ metadata:
   name: opa
   namespace: isp
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: opa
@@ -21,6 +21,6 @@ spec:
       containers:
       - image: openpolicyagent/opa
         name: opa
-        restartPolicy: OnFailure
+        restartPolicy: Always
         resources: {}
 status: {}
