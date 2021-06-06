@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: opa
+  name: opa
+  namespace: isp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: opa
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: opa
+    spec:
+      containers:
+      - image: openpolicyagent/opa
+        name: opa
+        resources: {}
+status: {}
