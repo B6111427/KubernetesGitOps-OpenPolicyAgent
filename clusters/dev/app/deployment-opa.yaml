@@ -22,10 +22,10 @@ spec:
         - name: http
           containerPort: 8181
         args:
-        - "run"
-        - "--ignore=.*"  # exclude hidden dirs created by Kubernetes
-        - "--server"
-        - "/policies"
+        - run
+        - --ignore=.*  # exclude hidden dirs created by Kubernetes
+        - --server
+        - /policies
         volumeMounts:
         - readOnly: true
           mountPath: /policies
